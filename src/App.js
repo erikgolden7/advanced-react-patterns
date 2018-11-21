@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Tabs from './Compound_Components/components/Tabs';
+import glamorous from 'glamorous';
 
 class App extends Component {
   render() {
+    const styles = {
+      fontFamily: 'sans-serif',
+      textAlign: 'center'
+    };
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div style={styles}>
+        <Tabs
+          activeTab={{
+            id: 'tab1'
+          }}
+        >
+          <Tabs.Tab id="tab1" title="Tab 1">
+            <glamorous.Div padding={20}>This is tab 1</glamorous.Div>
+          </Tabs.Tab>
+          <Tabs.Tab id="tab2" title="Tab 2">
+            <glamorous.Div padding={20}>This is tab 2</glamorous.Div>
+          </Tabs.Tab>
+        </Tabs>
       </div>
     );
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+
+// Compound Components
 import Tabs from './Compound_Components/Example_One/Tabs';
 import glamorous from 'glamorous';
-
 import Toggle from './Compound_Components/Example_Two/Toggle';
 
 // Proptypes
@@ -22,7 +23,7 @@ import SharedComponent from './RenderProps/SharedComponent';
 import Mouse from './RenderProps/Mouse';
 import SwapiContainer from './RenderProps/SwapiContainer';
 
-// HOC
+// HOC (Higher Order Components)
 import { WithSwapi } from './HOC/SwapiHOC';
 import SwapiPeople from './HOC/SwapiPeople';
 import SwapiPlanets from './HOC/SwapiPlanets';

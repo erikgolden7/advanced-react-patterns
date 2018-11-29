@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 export default class FragmentComponent extends Component {
   render() {
     return (
-      <React.Fragment>
-        <td>Hello</td>
-        <td>World</td>
-      </React.Fragment>
+      <Fragment>
+        <p>Hello</p>
+        <p>World</p>
+      </Fragment>
     );
   }
 }
